@@ -1,23 +1,79 @@
----
-layout: default
----
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+<title>Geeky Goodies Gifts</title>
+<meta charset="UTF-8" />
+ <link href="https://fonts.googleapis.com/css?family=Gidugu" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
+<body>
+<!-- nav bar -->
+<header>
+<div class="logo">
+  <a href="#">
+  <img class="logo" src="http://res.cloudinary.com/fullpruf/image/upload/v1496100650/ggglogoweb_cuaxi4.png" />
+  </a>
+  </div>
+  <div class="menu">
+    <nav>
+      <a href="#" id="menu-icon"></a>
+  <ul>
+    <li><a href="https://www.facebook.com/geekygoodiesgifts/" target="_blank">Facebook</a></li>
+    <li><a href="https://www.etsy.com/shop/GeekyGoodiesGifts?ref=shop_sugg" target="_blank">Etsy</a></li>
+    <li><a href="mailto:geekygoodiesgifts@outlook.com">Contact Us</a></li>
   </ul>
+    </nav>
+  </div>
+</header>
+<section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<!-- main content -->
+<div class="main">
+  <div class="about">
+    <p>We make a variety of products based on your favorite fandoms. Most items are custom made except for the artwork. You can make purchases through our Etsy shop. If you don't see what you're looking for or have any questions, send us an email.</p>
+    </div>
+  
+  <div class="products">
+    <p>Tumblers $8</p>
+    <a href="https://www.etsy.com/listing/532518887/tumblers?ref=shop_home_active_2" target="_blank"><img src="http://res.cloudinary.com/fullpruf/image/upload/v1496100906/il_fullxfull.1252996231_oqdz_qlbfbi.jpg" /></a>
+    <p>T-Shirts $15</p>
+    <a href="https://www.etsy.com/listing/533223351/death-metal?ref=shop_home_active_1" target="_blank"><img src="http://res.cloudinary.com/fullpruf/image/upload/v1496100908/il_fullxfull.1208070690_gy46_esb6gs.jpg" /></a>
+    <p>Artwork $3</p>
+    <img src="http://res.cloudinary.com/fullpruf/image/upload/v1496100905/il_fullxfull.1179257207_ogxd_xas9zg.jpg" />
+    <p>Shoes $45</p>
+    <a href="https://www.etsy.com/listing/492371264/naruto?ref=shop_home_active_4" target="_blank"><img src="http://res.cloudinary.com/fullpruf/image/upload/v1496100906/il_fullxfull.1123878694_krnx_rmo9az.jpg" /></a>
+  </div>
+  <p>We also offer:</p>
+    <div id="others">
+      <p>
+    Stickers $2
+    <br>
+    Decals $2-$5
+    <br>
+        Bookmarks $2</p>
+  </div>
+  <br>
+  
+<!-- contact form -->
+  <div id="form">
+  <h3>CONTACT US</h3>
+    <form action="mailto:geekygoodiesgifts@outlook.com" method="post" enctype="text/plain">
+        Name:
+        <input type="text" name="name"><br>
+        Email:
+        <input type="text" name="email"><br>
+        Comment:
+        <input type="text" name="comment"<br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+        </form>
+  </div>
 </div>
+
+<!-- footer -->
+<div class="footer">
+  <p>Copyright &copy 2017 Geeky Goodies Gifts. All rights reserved.</p>
+</div>
+</body>
+</html>
